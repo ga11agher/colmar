@@ -14,16 +14,17 @@
 
  html {
   font-family: 'Cabin', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
  }
 
 h1 {
+  color: #46484f;
   font-size: 2.5em;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
-h4 {
-  margin-bottom: 24px;
+h2 {
+  color: #46484f;
 }
 
 p {
@@ -69,6 +70,10 @@ header {
   display: inline;
 }
 
+nav {
+  margin-right: 24px;
+}
+
 nav li {
   display: inline;
   align-content: space-between;
@@ -86,20 +91,15 @@ nav.mobile {
   background: DimGray;
   color: white;
   padding: 8px 128px;
-  width: max-content;
 }
 
 .button a:hover {
   color: black;
 }
 
-.section-1 {
-  top: 64px;
-}
-
 .section-1-img {
   width: 60%;
-  margin: 32px 40px 32px 24px;
+  margin: 32px 24px;
 }
 
 .section-1-img img {
@@ -108,10 +108,12 @@ nav.mobile {
 }
 
 .section-1-content {
-  padding-top: 10%;
+  align-items: left;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  margin-left: 24px;
+  margin-right: 60px;
+  padding-top: 10%;
   width: 40%;
 }
 /**
@@ -125,6 +127,125 @@ nav.mobile {
 }
 **/
 
+/**Section 2**/
+.link {
+  color: mediumblue;
+}
+
+.section-2-left {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.section-2-left img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.section-2-box {
+  align-items: center;
+  padding-top: 16px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.section-2-content {
+  padding-left: 25px;
+  width: 65%;
+}
+
+.section-2-right {
+  border-left: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  width: 40%;
+}
+
+.section-2-box img {
+  margin: 16px 16px;
+  width: 35%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-2-left {
+    width: 50%;
+    margin-left: 16px
+  }
+
+  .section-2-right {
+    width: 50%;
+  }
+}
+
+/**Section 3**/
+.section-3 {
+  display: block;
+}
+
+.section-3 h2 {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.section-3-squares {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-3-square {
+  background-color: white;
+  margin-bottom: 10px;
+  margin-right: 32px;
+  width: 260px;
+}
+
+.section-3-square img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.square-text {
+  width: 220px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+/** Section 4 **/
+
+.section-4-left {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.section-4-left video {
+  width: 100%;
+  height: auto;
+}
+
+.video-mobile {
+  display: none;
+}
+
+
+
+/**Footer**/
+
+
+
+
+
+
+/**Media Queries**/
 @media only screen and (max-width: 768px) {
   header .logo, nav.desktop {
     display: none;
