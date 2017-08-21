@@ -155,7 +155,8 @@ nav.mobile {
   }
 
   .section-1-content {
-    margin: 32px 16px 32px 16px;
+    margin: 0 16px 32px 16px;
+    padding-top: 0;
     text-align: center;
   }
 
